@@ -45,7 +45,7 @@ function onValueChanged() {
 
   var err = false;
   err |= !check("account", (v) => v.length > 0 && !v.match(/:/));
-  err |= !check("secret", (v) => v.match(/^[a-z2-7]{26,}$/i));
+  err |= !check("secret", (v) => v.match(/^[a-z2-7]{16,}$/i));
   err |= !check("issuer", (v) => !v.match(/:/));
 
   var prv = document.getElementById("preview");
