@@ -41,9 +41,9 @@
 					  <select id="algorithm" name="algorithm"
 					    onChange="onValueChanged()"
 					    onBlur="onValueChanged()">
-						  <option value="SHA1">SHA1</option>
+						  <option value="SHA1" selected="selected">SHA1</option>
 						  <option value="SHA224">SHA224</option>
-						  <option value="SHA256" selected="selected">SHA256</option>
+						  <option value="SHA256">SHA256</option>
 						  <option value="SHA384">SHA384</option>
 						  <option value="SHA512">SHA512</option>
 					  </select>
@@ -61,7 +61,7 @@
 				  <td class="shrink left">
 					  <label>
 						  <input type="radio" name="type" value="hotp"
-						    onChange="onValueChanged()" checked="checked"> Counter</input>
+						    onChange="onValueChanged()"> Counter</input>
 					  </label>
 				  </td>
 			  </tr>
@@ -73,7 +73,7 @@
 				  <td class="shrink left">
 					  <label>
 						  <input type="radio" name="type" value="totp"
-						    onChange="onValueChanged()"> Timeout</input>
+						    onChange="onValueChanged()" checked="checked"> Timeout</input>
 					  </label>
 				  </td>
 			  </tr>
